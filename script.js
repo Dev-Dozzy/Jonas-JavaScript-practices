@@ -29,7 +29,18 @@ console.log(firstName + ' is a ' + age + ' years old ' + job + '. Is he married?
 
 /*Variable Mutation*/
 age = 'twenty eight';
-
+job = 'driver';
+alert(
+  firstName +
+    " is a " +
+    age +
+    " years old " +
+    job +
+    ". Is he married? " +
+    isMarried
+);
+var lastName = prompt('What is his last name?');
+console.log(firstName + ' ' + lastName);
 
 
 
