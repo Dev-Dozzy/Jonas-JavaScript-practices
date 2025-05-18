@@ -122,6 +122,7 @@ else {
   console.log(firstName + ' is a man.');
 }
 */
+/*
 //Ternary Operator
 var firstName = "Andrew";
 var age = 21;
@@ -163,4 +164,50 @@ switch (true) {
   default:
     console.log(firstName + " is a man.");
     break;
+}
+*/
+//Truthy and Falsy values amd equality operators
+//falsy values are null, undefined, 0 and NaN
+//Truthy values are those that are not falsy.
+//example.
+/*
+var height = 23;
+if (height || height === 0) {
+  console.log('Variable is defined.');
+} else {
+  console.log('variable is NOT defined.');
+}
+
+if (height === '23') {
+  console.log('The == operator supports type coercion.');
+} else {
+  console.log('The === does NOT support type coercion.');
+}
+*/
+//Coding challange 2
+var teamJohn = 89 + 120 + 124;
+var teamMike = 116 + 94 + 123;
+var teamMary = 97 + 134 + 105;
+
+var averageJohn = teamJohn / 3;
+console.log("The Average score for John's team is " + averageJohn);
+var averageMike = teamMike / 3;
+console.log("The Average score for Mike's team is " + averageMike);
+var averageMary = teamMary / 3;
+console.log("The Average score for Mary's team is " + averageMary);
+
+if (averageJohn > averageMike && averageJohn > averageMary) {
+  console.log(
+    "Team John wins with the average score of " + averageJohn + " points"
+  );
+} else if (averageMary > averageJohn && averageMary > averageMike) {
+  console.log(
+    "Team Mary wins with the average score of " + averageMary + " points"
+  );
+} else if (averageMike > averageJohn && averageMike > averageMary) {
+  console.log(
+    "Team Mike wins with the average score of " + averageMike + " points"
+  );
+} else {
+  console.log("There is a draw.");
 }
