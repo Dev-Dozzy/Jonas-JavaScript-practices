@@ -67,6 +67,7 @@ var dikeOlder = ageDike < ageDozie;
 console.log(dikeOlder);
 */
 /*******Operator Precedence */
+/*
 var now = 2025;
 var yearDozie = 1991;
 var fullAge = 18;
@@ -76,3 +77,30 @@ console.log(isFullAge)
 var x = 20;
 x *= 2;
 console.log(x)
+*/
+
+// If/Else Statement
+/*
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+  console.log(firstName + ' is married!');
+} else {
+  console.log(firstName + ' will hopefully marry soon.');
+}
+  */
+ var markWages, johnWages, markJobs, johnJobs;
+ markWages = 2500;
+ markJobs = 5;
+ johnWages = 2300;
+ johnJobs = 6;
+
+var markWealth = markWages * markJobs;
+var johnWealth = johnWages * johnJobs;
+
+if (markWealth > johnWealth) {
+  console.log('Mark worths more than John.');
+} else {
+  console.log('John worths more than Mark.');
+}
