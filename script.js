@@ -90,6 +90,8 @@ if (civilStatus === 'married') {
   console.log(firstName + ' will hopefully marry soon.');
 }
   */
+/*****
+// If/Else practice
  var markWages, johnWages, markJobs, johnJobs;
  markWages = 2500;
  markJobs = 5;
@@ -103,4 +105,62 @@ if (markWealth > johnWealth) {
   console.log('Mark worths more than John.');
 } else {
   console.log('John worths more than Mark.');
+}
+****/
+/*
+//Boolean logic
+var firstName = 'John';
+var age = 20;
+
+if (age < 13) {
+  console.log(firstName + ' is a boy.');
+} else if(age >= 13 && age < 20) {
+  console.log(firstName + ' is a teenager.');
+} else if (age >= 20 && age < 30)
+  console.log(firstName + ' is a young man.');
+else {
+  console.log(firstName + ' is a man.');
+}
+*/
+//Ternary Operator
+var firstName = "Andrew";
+var age = 21;
+
+age >= 18
+  ? console.log(firstName + " drinks beer.")
+  : console.log(firstName + " drinks juice.");
+
+var drink = age >= 18 ? "beer" : "juice";
+console.log(drink);
+
+//Switch statement
+var job = "designer";
+switch (job) {
+  case "teacher":
+    console.log(firstName + " teaches children how to code.");
+    break;
+  case "driver":
+    console.log(firstName + " drives an Uber in Lisbon.");
+    break;
+  case "designer":
+    console.log(firstName + " designs beautuful websites.");
+    break;
+  default:
+    console.log(firstName + " does something else.");
+}
+var firstName = "Dozzy";
+var age = 22;
+switch (true) {
+  case age < 13:
+    console.log(firstName + " is a boy.");
+    break;
+  case age >= 13 && age < 20:
+    console.log(firstName + " is a teenager.");
+    break;
+  case age >= 20 && age <= 30:
+    console.log(firstName + " is a young man.");
+    break;
+  default:
+    console.log(firstName + " is a man.");
+    break;
 }
