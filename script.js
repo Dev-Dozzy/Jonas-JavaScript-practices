@@ -264,4 +264,23 @@ console.log(whatDoYouDo('Teacher', 'John'));
 console.log(whatDoYouDo("Driver", "Mike"));
 console.log(whatDoYouDo("Designer", "Phil"));
 */
+//Array
+//Initialize new array
+var names = ["John", "Mike", "Jane"];
+var year = new Array(1990, 1943, 1986);
 
+console.log(names[0]);
+console.log(names.length);
+
+//Mutate array
+names[1] = "Dozzy";
+console.log(names);
+
+//Different data types
+var Chiedozie = ["Chiedozie", "Chukwuma", 1991, "Frontend developer", false];
+console.log(Chiedozie);
+//Applying Methods
+Chiedozie.push("Blue");
+Chiedozie.unshift("Mr.");
+Chiedozie.pop();
+console.log(Chiedozie);
