@@ -184,6 +184,7 @@ if (height === '23') {
   console.log('The === does NOT support type coercion.');
 }
 */
+/*
 //Coding challange 2
 var teamJohn = 89 + 120 + 124;
 var teamMike = 116 + 94 + 123;
@@ -211,3 +212,56 @@ if (averageJohn > averageMike && averageJohn > averageMary) {
 } else {
   console.log("There is a draw.");
 }
+*/
+
+//functions
+function calculateAge(birthYear) {
+  return 2018 - birthYear;
+}
+var ageJohn = calculateAge(1991);
+var ageMike = calculateAge(1934);
+var agePhil = calculateAge(1977);
+console.log(ageJohn, ageMike, agePhil);
+
+function yearUntilRetirement(year, firstName) {
+  var age = calculateAge(year);
+  var retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(firstName + " retires in " + retirement + " years.");
+  } else {
+    console.log(firstName + " is already retired.");
+  }
+}
+
+yearUntilRetirement(1991, "John");
+yearUntilRetirement(1934, "Mike");
+yearUntilRetirement(1977, "Phil");
+
+/*****Function statements and expressions */
+//Function declaration
+/*function whatDoYouDo(job, firstNanme) {} ;*/
+//Function Statement
+/*
+var whatDoYouDo = function (job, firstName) {
+  switch (job) {
+    case "Teacher":
+      return firstName + " teaches kids how to code.";
+
+    case "Driver":
+      return firstName + " drives an Uber in Lisbon.";
+
+    case "Designer":
+      return firstName + " designs beautiful websites.";
+
+    default:
+      return firstName + " does nothing currently.";
+  }
+};
+
+
+console.log(whatDoYouDo('Teacher', 'John'));
+console.log(whatDoYouDo("Driver", "Mike"));
+console.log(whatDoYouDo("Designer", "Phil"));
+*/
+
