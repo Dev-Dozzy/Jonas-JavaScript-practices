@@ -266,6 +266,7 @@ console.log(whatDoYouDo("Designer", "Phil"));
 */
 //Array
 //Initialize new array
+/*
 var names = ["John", "Mike", "Jane"];
 var year = new Array(1990, 1943, 1986);
 
@@ -284,3 +285,27 @@ Chiedozie.push("Blue");
 Chiedozie.unshift("Mr.");
 Chiedozie.pop();
 console.log(Chiedozie);
+*/
+//Challenge 3
+
+function tipCalulate(bill) {
+  var percentage;
+  if (bill < 50) {
+    percentage = .2;
+  } else if (bill >= 50 && bill < 200) {
+    percentage = .15;
+  } else {
+    percentage = .1;
+  }
+  return percentage * bill;
+}
+var bill = [124, 48, 268];
+var tip = [tipCalulate(bill[0]),
+            tipCalulate(bill[1]),
+          tipCalulate(bill[2])];
+var finalValues = [bill[0] + tip[0],
+                  bill[1] + tip[1],
+                  bill[2] + tip[2]];
+
+
+console.log(tip, finalValues);
