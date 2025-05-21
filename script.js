@@ -287,7 +287,7 @@ Chiedozie.pop();
 console.log(Chiedozie);
 */
 //Challenge 3
-
+/*
 function tipCalulate(bill) {
   var percentage;
   if (bill < 50) {
@@ -309,3 +309,32 @@ var finalValues = [bill[0] + tip[0],
 
 
 console.log(tip, finalValues);
+*/
+//Objects and properties
+//object literal
+var john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  birthYear: 1990,
+  family:['Jane', 'Mark', 'Bob', 'Emily'],
+  job: 'Teacher',
+  isMarried: false
+};
+
+//new object syntax
+console.log(john.firstName);
+console.log(john['lastName']);
+var q = 'birthYear';
+console.log(john[q]);
+
+john.job = 'Designer';
+john['isMarried'] = true;
+
+console.log(john);
+
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.lastName = 'Smith';
+jane['birthYear'] = 1969;
+
+console.log(jane);
