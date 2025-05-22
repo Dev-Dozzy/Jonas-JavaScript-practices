@@ -1,19 +1,3 @@
-/*
-var firstName='Chiedozie';
-console.log(firstName);
-
-var lastName = 'Chukwuma';
-var age = 26;
-
-var fullAge = true;
-console.log(fullAge);
-
-var job;
-console.log(job);
-
-job = 'Teacher';
-console.log(job);
-
 /*Variable mutation */
 
 /*Type coerction*/
@@ -343,6 +327,7 @@ console.log(jane);
 */
 
 //Objects and Methods
+/*
 var john = {
   firstName: "John",
   lastName: "Smith",
@@ -350,9 +335,9 @@ var john = {
   family: ["Jane", "Mark", "Bob", "Emily"],
   job: "Teacher",
   isMarried: false,
-  calcAge: function(){
+  calcAge: function () {
     return 2025 - this.birthYear;
-  }
+  },
 };
 
 console.log(john.calcAge());
@@ -362,10 +347,10 @@ var mark = {
   fullName: "Mark Smith",
   mass: 92,
   height: 1.95,
-  calcBmi: function(){
-    return (this.mass / this.height**2);
-  }
-}
+  calcBmi: function () {
+    return this.mass / this.height ** 2;
+  },
+};
 
 console.log(`${mark.fullName} has a BMI of ${mark.calcBmi()}`);
 
@@ -374,39 +359,41 @@ var john = {
   mass: 78,
   height: 1.69,
   calcBmi: function () {
-    return this.Bmi = this.mass / this.height**2;
-  }
-}
+    return (this.Bmi = this.mass / this.height ** 2);
+  },
+};
 console.log(`${john.fullName} has a BMI of ${john.calcBmi()}`);
 
-if(mark.calcBmi() > john.calcBmi()) {
-  console.log(`Mark\'s BMI which has the value of ${mark.calcBmi()} is greater than John\'s.`)
-} else if(john.calcBmi() > mark.calcBmi()) {
+if (mark.calcBmi() > john.calcBmi()) {
   console.log(
-    `John\'s BMI which has the value of ${mark.calcBmi()} is greater than Mark\'s.`)
-  } else {
-    console.log("Their BMI values are the same.")
+    `Mark\'s BMI which has the value of ${mark.calcBmi()} is greater than John\'s.`
+  );
+} else if (john.calcBmi() > mark.calcBmi()) {
+  console.log(
+    `John\'s BMI which has the value of ${mark.calcBmi()} is greater than Mark\'s.`
+  );
+} else {
+  console.log("Their BMI values are the same.");
 }
+  */
 
 //Loops and Iteration
 
-
 //For loop
-for (var i = 1; i < 10; i +=2) {
+for (var i = 1; i < 10; i += 2) {
   console.log(i);
 }
 //Example
-var john = ['John', 'Smith', 1967, 'Designer', 'False'];
+var john = ["John", "Smith", 1967, "Designer", "False"];
 for (i = 0; i < john.length; i++) {
   console.log(john[i]);
 }
 
-
 //While loop
 var john = ["John", "Smith", 1967, "Designer", "False"];
 var i = 0;
-while (i < john.length); {
+while (i < john.length);
+{
   console.log(john[i]);
   i++;
 }
-
