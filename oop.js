@@ -42,7 +42,7 @@ const ride = Bmx.ride();
 
 console.log(ride);
 */
-
+/*
 class Chair {
   constructor(brand, color, year){
     this.brand = brand;
@@ -57,3 +57,4 @@ class Chair {
 
 const ceo = new Chair("furgle", "white", "2025");
 console.log(ceo.sit());
+*/
